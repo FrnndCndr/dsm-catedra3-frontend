@@ -19,19 +19,18 @@ export default function HomeScreen() {
         <Text style={styles.logo}>Restaurant App</Text>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.authButton} onPress={() => router.push('/login')}>
+          <TouchableOpacity style={styles.authButton} onPress={() => router.push('/auth/login')}>
             <Text style={styles.authButtonText}>Login</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.authButton} onPress={() => router.push('/signup')}>
+          <TouchableOpacity style={styles.authButton} onPress={() => router.push('/auth/signup')}>
             <Text style={styles.authButtonText}>Register</Text>
           </TouchableOpacity>
         </View>
-
         <View style={styles.grid}>
           <TouchableOpacity style={styles.gridItem} onPress={() => router.push('/menu')}>
             <Text style={styles.gridText}>View the Menu</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.gridItem} onPress={() => router.push('/contact')}>
+          <TouchableOpacity style={styles.gridItem} onPress={() => router.push('/+not-found')}>
             <Text style={styles.gridText}>Contact Us</Text>
           </TouchableOpacity>
         </View>
